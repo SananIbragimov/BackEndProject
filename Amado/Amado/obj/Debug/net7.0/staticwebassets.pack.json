@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Amado.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Amado.bundle.scp.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Amado.props",
+      "PackagePath": "build\\Amado.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Amado.props",
+      "PackagePath": "buildMultiTargeting\\Amado.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Amado.props",
+      "PackagePath": "buildTransitive\\Amado.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

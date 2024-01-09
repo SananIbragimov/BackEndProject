@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "rVlDt4Kq5wRzzEF5mY9NU0/LJhOh1bVc31NrUc5cZO8=",
+  "Source": "Amado",
+  "BasePath": "_content/Amado",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Amado\\wwwroot",
+      "Source": "Amado",
+      "ContentRoot": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\",
+      "BasePath": "_content/Amado",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Amado.styles.css",
+      "SourceId": "Amado",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Amado",
+      "RelativePath": "Amado.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Amado.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Amado.bundle.scp.css",
+      "SourceId": "Amado",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Amado",
+      "RelativePath": "Amado.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Amado.bundle.scp.css"
+    }
+  ]
+}
