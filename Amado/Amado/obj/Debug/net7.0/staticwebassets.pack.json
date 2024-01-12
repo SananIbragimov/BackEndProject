@@ -1,8 +1,60 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Amado.bundle.scp.css",
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Amado.bundle.scp.css",
       "PackagePath": "staticwebassets\\Amado.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_transition.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_transition.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\images\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\images\\login-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\main.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\popper.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj": {}
+    "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj": {
+    "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj",
         "projectName": "Amado",
-        "projectPath": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj",
-        "packagesPath": "C:\\Users\\sananai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sananai\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\Amado.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sananai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
