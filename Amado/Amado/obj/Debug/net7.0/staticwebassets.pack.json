@@ -5,56 +5,112 @@
       "PackagePath": "staticwebassets\\Amado.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap.min.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\css\\material-dashboard.css",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\css\\material-dashboard.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\_media.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\_media.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\css\\material-dashboard.css.map",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\css\\material-dashboard.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_border-radius.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_border-radius.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\css\\material-dashboard.min.css",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\css\\material-dashboard.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_screen-reader.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_screen-reader.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\css\\nucleo-icons.css",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\css\\nucleo-icons.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_transition.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_transition.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\css\\nucleo-svg.css",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\css\\nucleo-svg.css"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\mixins\\_visibility.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\mixins\\_visibility.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.eot",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo-icons.eot"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\bootstrap\\utilities\\_stretched-link.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\bootstrap\\utilities\\_stretched-link.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.svg",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo-icons.svg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\css\\style.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\style.css"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.ttf",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo-icons.ttf"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\images\\login-bg.jpg",
-      "PackagePath": "staticwebassets\\Admin\\images\\login-bg.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.woff",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo-icons.woff"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\Admin\\js\\bootstrap.min.js"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.woff2",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\jquery.min.js",
-      "PackagePath": "staticwebassets\\Admin\\js\\jquery.min.js"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo.eot",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo.eot"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\main.js",
-      "PackagePath": "staticwebassets\\Admin\\js\\main.js"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo.ttf",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo.ttf"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\js\\popper.js",
-      "PackagePath": "staticwebassets\\Admin\\js\\popper.js"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo.woff",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\fonts\\nucleo.woff2",
+      "PackagePath": "staticwebassets\\Admin\\Home\\assets\\fonts\\nucleo.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\mixins\\_transition.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\mixins\\_transition.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\style.css",
+      "PackagePath": "staticwebassets\\Admin\\Login\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\images\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\Admin\\Login\\images\\login-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admin\\Login\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Admin\\Login\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\js\\main.js",
+      "PackagePath": "staticwebassets\\Admin\\Login\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Admin\\Login\\js\\popper.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",

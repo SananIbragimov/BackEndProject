@@ -1,0 +1,31 @@
+﻿@model CategoryIndexVM
+
+<div class="d-flex flex-column justify-content-start align-items-center w-100">
+    <h2 class="w-100 mb-4">Category List</h2>
+
+    <table class="table table-bordered w-100">
+        <thead class="w-100" >
+            <tr class="w-100 d-flex justify-content-center align-items-center">
+                <th class="table-data p-2">ID</th>
+                <th class="table-data p-2">Name</th>
+                <th class="table-data ps-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="w-100">
+            @foreach (var category in Model.Categories)
+            {
+                <tr class="w-100 d-flex justify-content-between align-items-center">
+                    <td class="table-data d-flex justify-content-start align-items-center">@category.Id</td>
+                    <td class="table-data d-flex justify-content-start align-items-center">@category.Name</td>
+                    <td class="table-data d-flex justify-content-end align-items-start">
+                        <a class="btn btn-warning" asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id">Edit</a>
+                        <a class="btn btn-danger ms-1" asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-info mt-3" asp-controller="Category" asp-action="Add">Add Category</a>
+</div>
+
