@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PHd6P7uG/JbfbLknwvDMnzlaacgnB6l+7E6nZO+1g80=",
+  "Hash": "LQEMoF+E1XhZ2+Vbe+oWed8eNAcBQIKpe5zTzfHXUwo=",
   "Source": "Amado",
   "BasePath": "_content/Amado",
   "Mode": "Default",
@@ -587,12 +587,12 @@
       "OriginalItemSpec": "wwwroot\\Admin\\Login\\js\\popper.js"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png",
       "SourceId": "Amado",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\",
       "BasePath": "_content/Amado",
-      "RelativePath": "img/featured/buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png",
+      "RelativePath": "img/featured/location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,7 +603,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png"
+      "OriginalItemSpec": "wwwroot\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png"
     }
   ]
 }

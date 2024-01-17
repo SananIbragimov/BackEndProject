@@ -1,9 +1,9 @@
-﻿@model ProductAddVM
+﻿@model ProductEditVM
 
 <div class="d-flex flex-column justify-content-center align-items-start">
-    <h2 class="ms-5">Create Product</h2>
+    <h2 class="ms-5">Update Product</h2>
 
-    <form asp-controller="Product" asp-action="Add" method="post" enctype="multipart/form-data" class="ms-5">
+    <form asp-controller="Product" asp-action="Edit" method="post" enctype="multipart/form-data" class="ms-5">
         <div class="form-group">
             <label>Enter name</label>
             <input asp-for="Name" class="form-control border border-dark" />
@@ -57,8 +57,23 @@
             <input asp-for="Images" type="file" multiple class="form-control border border-dark" id="imageInput" />
             <span asp-validation-for="Images" class="text-danger"></span>
         </div>
+
+        <div class="form-group mt-3">
+            <label>Existing Images:</label>
+            <div>
+                @*  @if (Model.ExistingImages != null)
+                {
+                foreach (var imageUrl in Model.ExistingImages)
+                {
+                <img src="@Url.Content("~/img/featured/" + imageUrl)" alt="Existing Image" style="max-width: 100px; max-height: 100px; margin-right: 10px; margin-bottom: 10px;" />
+                }
+                } *@
+            </div>
+
+        </div>
+
         <div id="imagePreview"></div>
-        <button type="submit" class="btn btn-info text-center mt-3">Add</button>
+        <button type="submit" class="btn btn-info text-center mt-3">Update</button>
     </form>
     <br /> <br />
     <a asp-controller="Product" asp-action="Index">Back to ProductList</a>

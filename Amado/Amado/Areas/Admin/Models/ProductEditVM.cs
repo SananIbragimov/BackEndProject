@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System.ComponentModel.DataAnnotations;
 
 namespace Amado.Areas.Admin.Models
 {
-    public class ProductAddVM
+    public class ProductEditVM
     {
         public string Name { get; set; }
         public string Desc { get; set; }
@@ -17,5 +16,6 @@ namespace Amado.Areas.Admin.Models
         public List<SelectListItem>? Categories { get; set; }
         public List<SelectListItem>? Brands { get; set; }
         public List<SelectListItem>? Colors { get; set; }
+        public List<string> ExistingImages { get; set; }
     }
 }

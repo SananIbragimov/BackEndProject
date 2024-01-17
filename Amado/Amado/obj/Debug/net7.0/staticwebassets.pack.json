@@ -117,8 +117,8 @@
       "PackagePath": "staticwebassets\\Admin\\Login\\js\\popper.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png",
-      "PackagePath": "staticwebassets\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png",
+      "PackagePath": "staticwebassets\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",
