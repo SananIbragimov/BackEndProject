@@ -1,6 +1,7 @@
 using Amado.Data;
 using Amado.Entities;
 using Amado.Helper;
+using Amado.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,7 +29,10 @@ namespace Amado
                 opt.Password.RequireLowercase = false;
             }).AddEntityFrameworkStores<AppDbContext>();
 
+            builder.Services.AddScoped<FileUploadService>();
+
             var app = builder.Build();
+            
 
             await DataSeed.InitializeAsync(app.Services);
 

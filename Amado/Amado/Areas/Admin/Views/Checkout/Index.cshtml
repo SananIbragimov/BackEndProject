@@ -1,0 +1,55 @@
+﻿@using Amado.Entities
+@model List<Checkout>
+
+<div class="container">
+    <h3 class="text-center mb-2 letter-spacing-1">Checkout</h3>
+
+    <table class="table-bordered w-100">
+        <tbody>
+            @foreach (var checkout in Model)
+            {
+                <tr>
+                    <th class="p-3">First Name:</th>
+                    <td class="px-2">@checkout.FirstName</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Last Name:</th>
+                    <td class="px-2">@checkout.LastName</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Company Name</th>
+                    <td class="px-2">@checkout.CompanyName</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Country Name</th>
+                    <td class="px-2">@checkout.CountryName</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Town</th>
+                    <td class="px-2">@checkout.Town</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Email</th>
+                    <td class="px-2">@checkout.Email</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Phone Number</th>
+                    <td class="px-2">@checkout.PhoneNumber</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Zip Code</th>
+                    <td class="px-2">@checkout.ZipCode</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Address</th>
+                    <td class="px-2">@checkout.Address</td>
+                </tr>
+                <tr>
+                    <th class="p-3">Comment</th>
+                    <td class="px-2">@checkout.Comment</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

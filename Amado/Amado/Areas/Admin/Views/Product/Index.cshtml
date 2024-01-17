@@ -1,0 +1,62 @@
+﻿@model ProductIndexVM
+
+<div class="w-100 ms-5 d-flex flex-column justify-content-start align-items-start">
+
+    <h2>Product List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>In Stock</th>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Color</th>
+                <th>Images</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Products != null)
+            {
+                @foreach (var product in Model.Products)
+                {
+                    if (product != null && product.Images != null)
+                    {
+                        <tr>
+                            <td>@product.Id</td>
+                            <td>@product.Name</td>
+                            <td>@product.Desc</td>
+                            <td>@product.Quantity</td>
+                            <td>@product.InStock</td>
+                            <td>@product.Category?.Name</td>
+                            <td>@product.Brand?.Name</td>
+                            <td>@product.Color?.Name</td>
+                            <td>
+                                <div>
+                                    @foreach (var image in product.Images)
+                                    {
+                                        <img src="/img/featured/@image.ImgUrl" alt="" style="max-width: 100px; max-height: 100px;" />
+
+                                    }
+                                </div>
+                            </td>
+                            <td>
+                                <a class="btn btn-warning" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id">Edit</a>
+                                <a class="btn btn-danger" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+            else
+            {
+                <p>No products available.</p>
+            }
+        </tbody>
+    </table>
+    
+    <a class="btn btn-info" asp-controller="Product" asp-action="Add">Add Product</a> 
+</div>

@@ -27935,6 +27935,20 @@ pre[class*="language-"] {
 }
 
 
+.delete-icon {
+    color: red; 
+    cursor: pointer; 
+    position: absolute;
+    font-size: 16px; 
+    right: 105px; 
+    top: 0;
+}
+.image-container{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 .table-data{
     width: 41%;
 }

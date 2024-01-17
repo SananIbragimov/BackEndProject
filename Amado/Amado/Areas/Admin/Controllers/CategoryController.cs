@@ -3,6 +3,8 @@ using Amado.Data;
 using Amado.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
+
 
 namespace Amado.Areas.Admin.Controllers
 {
@@ -17,14 +19,14 @@ namespace Amado.Areas.Admin.Controllers
             _dbContext = dbContext;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1, int pageSize = 4)
         {
-            var categories = _dbContext.Categories.ToList();
-            if (categories == null)  return NotFound();
+            var categories = _dbContext.Categories.OrderBy(x => x.Id);
+            var pagedList = categories.ToPagedList(page, pageSize);
 
             var model = new CategoryIndexVM
             {
-                Categories = categories
+                Categories = pagedList
             };
             return View(model);
         }

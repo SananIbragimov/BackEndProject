@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Amado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b655d8d5d1721487c66183e1accfa7ae39d9138")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ddbcefd7f65564c91ae03daecec2140c7cb4bf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Amado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Amado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

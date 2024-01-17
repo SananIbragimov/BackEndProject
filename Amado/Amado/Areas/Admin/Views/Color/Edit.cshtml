@@ -1,0 +1,21 @@
+﻿@model ColorEditVM
+
+<div class="d-flex flex-column justify-content-start align-items-start g-10 w-100 ms-3">
+    <h2 class="align-self-start">Update Color</h2>
+
+    <form asp-controller="Color" asp-action="Edit" method="post" class="w-100">
+        <div class="form-group">
+            <label for="name" class="control-label">Please enter color name:</label>
+            <input asp-for="Name" class="form-control border mb-3 p-2 w-25" id="name" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info">Update</button>
+            <br />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </form>
+    <br /> <br />
+    <a asp-controller="Color" asp-action="Index">Back to ColorList</a>
+</div>
+
+

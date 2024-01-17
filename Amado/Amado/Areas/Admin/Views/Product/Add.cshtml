@@ -1,0 +1,70 @@
+﻿@model ProductAddVM
+
+<div class="d-flex flex-column justify-content-center align-items-start">
+    <h2 class="ms-5">Create Product</h2>
+
+    <form asp-controller="Product" asp-action="Add" method="post" enctype="multipart/form-data" class="ms-5">
+        <div class="form-group">
+            <label>Enter name</label>
+            <input asp-for="Name" class="form-control border border-dark" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Enter Description</label>
+            <textarea asp-for="Desc" class="form-control border border-dark" rows="3"></textarea>
+            <span asp-validation-for="Desc" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Enter Quantity</label>
+            <input asp-for="Quantity" class="form-control border border-dark" />
+            <span asp-validation-for="Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-4">
+            <label class="fs-5">Select Stock:</label>
+            <input asp-for="InStock" type="checkbox" class="" />
+            <span asp-validation-for="InStock" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label></label>
+            <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control border border-dark">
+                <option value="">-- Select Category --</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label></label>
+            <select asp-for="BrandId" asp-items="Model.Brands" class="form-control border border-dark">
+                <option value="">-- Select Brand --</option>
+            </select>
+            <span asp-validation-for="BrandId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label></label>
+            <select asp-for="ColorId" asp-items="Model.Colors" class="form-control border border-dark">
+                <option value="">-- Select Color --</option>
+            </select>
+            <span asp-validation-for="ColorId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="imageInput">Select Images</label>
+            <input asp-for="Images" type="file" multiple class="form-control border border-dark" id="imageInput" />
+            <span asp-validation-for="Images" class="text-danger"></span>
+        </div>
+        <div id="imagePreview"></div>
+        <button type="submit" class="btn btn-info text-center mt-3">Add</button>
+    </form>
+    <br /> <br />
+    <a asp-controller="Product" asp-action="Index">Back to ProductList</a>
+</div>
+
+@section Scripts{
+    <script src="/Admin/Home/assets/js/main.js">
+    </script>
+}

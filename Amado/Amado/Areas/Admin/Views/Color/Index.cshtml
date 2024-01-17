@@ -1,0 +1,38 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model ColorIndexVM
+
+
+<div class="d-flex flex-column justify-content-start align-items-center w-100">
+    <h2 class="w-100 mb-4">Color List</h2>
+
+    <table class="table table-bordered w-100">
+        <thead class="w-100">
+            <tr class="w-100 d-flex justify-content-center align-items-center">
+                <th class="table-data p-2">ID</th>
+                <th class="table-data p-2">Name</th>
+                <th class="table-data ps-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="w-100">
+            @foreach (var color in Model.Colors)
+            {
+                <tr class="w-100 d-flex justify-content-between align-items-center">
+                    <td class="table-data d-flex justify-content-start align-items-center">@color.Id</td>
+                    <td class="table-data d-flex justify-content-start align-items-center">@color.Name</td>
+                    <td class="table-data d-flex justify-content-end align-items-start">
+                        <a class="btn btn-warning" asp-controller="Color" asp-action="Edit" asp-route-id="@color.Id">Edit</a>
+                        <a class="btn btn-danger ms-1" asp-controller="Color" asp-action="Delete" asp-route-id="@color.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination-container">
+        @Html.PagedListPager(Model.Colors, page => Url.Action("Index", new { page }))
+    </div>
+    <a class="btn btn-info mt-3" asp-controller="Color" asp-action="Add">Add Color</a>
+</div>
+
+
+

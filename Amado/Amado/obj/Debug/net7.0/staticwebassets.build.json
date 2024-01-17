@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "czLGxI3wcH8p+jFHfEMJp42VyNeIJP8PKgbMM0pVs+I=",
+  "Hash": "PHd6P7uG/JbfbLknwvDMnzlaacgnB6l+7E6nZO+1g80=",
   "Source": "Amado",
   "BasePath": "_content/Amado",
   "Mode": "Default",
@@ -321,6 +321,25 @@
       "OriginalItemSpec": "wwwroot\\Admin\\Home\\assets\\fonts\\nucleo-icons.woff2"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Home\\assets\\js\\main.js",
+      "SourceId": "Amado",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\",
+      "BasePath": "_content/Amado",
+      "RelativePath": "Admin/Home/assets/js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Admin\\Home\\assets\\js\\main.js"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\Admin\\Login\\css\\bootstrap.min.css",
       "SourceId": "Amado",
       "SourceType": "Discovered",
@@ -566,6 +585,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Admin\\Login\\js\\popper.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png",
+      "SourceId": "Amado",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\",
+      "BasePath": "_content/Amado",
+      "RelativePath": "img/featured/buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\featured\\buta_ticket.pnga395cda1-bdd6-40ae-a0be-87238addfe63.png"
     }
   ]
 }

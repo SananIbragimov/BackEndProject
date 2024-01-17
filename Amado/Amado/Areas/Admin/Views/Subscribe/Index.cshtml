@@ -1,0 +1,38 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model SubscribeIndexVM
+
+
+<div class="d-flex flex-column justify-content-start align-items-center w-100">
+    <h2 class="w-100 mb-4">Subscribe List</h2>
+
+    <table class="table table-bordered w-100">
+        <thead class="w-100">
+            <tr class="w-100 d-flex justify-content-center align-items-center">
+                <th class="table-data p-2">ID</th>
+                <th class="table-data p-2">Email address</th>
+                <th class="table-data ps-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="w-100">
+            @foreach (var subscribe in Model.Subscribes)
+            {
+                <tr class="w-100 d-flex justify-content-between align-items-center">
+                    <td class="table-data d-flex justify-content-start align-items-center">@subscribe.Id</td>
+                    <td class="table-data d-flex justify-content-start align-items-center">@subscribe.Email</td>
+                    <td class="table-data d-flex justify-content-end align-items-start">
+                        <a class="btn btn-warning" asp-controller="Subscribe" asp-action="Edit" asp-route-id="@subscribe.Id">Edit</a>
+                        <a class="btn btn-danger ms-1" asp-controller="Subscribe" asp-action="Delete" asp-route-id="@subscribe.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination-container">
+        @Html.PagedListPager(Model.Subscribes, page => Url.Action("Index", new { page }))
+    </div>
+    <a class="btn btn-info mt-3" asp-controller="Subscribe" asp-action="Add">Add Subscribe</a>
+</div>
+
+
+

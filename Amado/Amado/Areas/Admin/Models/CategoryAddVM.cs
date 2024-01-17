@@ -5,7 +5,6 @@ namespace Amado.Areas.Admin.Models
 {
     public class CategoryAddVM
     {
-        [Required]
         public string Name { get; set; }
     }
 }

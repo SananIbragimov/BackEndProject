@@ -1,4 +1,7 @@
-﻿@model CategoryIndexVM
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model CategoryIndexVM
+
 
 <div class="d-flex flex-column justify-content-start align-items-center w-100">
     <h2 class="w-100 mb-4">Category List</h2>
@@ -25,7 +28,9 @@
             }
         </tbody>
     </table>
-
+    <div class="pagination-container">
+        @Html.PagedListPager(Model.Categories, page => Url.Action("Index", new { page }))
+    </div>
     <a class="btn btn-info mt-3" asp-controller="Category" asp-action="Add">Add Category</a>
 </div>
 
