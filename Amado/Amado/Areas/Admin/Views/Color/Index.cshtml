@@ -11,7 +11,8 @@
             <tr class="w-100 d-flex justify-content-center align-items-center">
                 <th class="table-data p-2">ID</th>
                 <th class="table-data p-2">Name</th>
-                <th class="table-data ps-4">Actions</th>
+                <th class="table-data p-2">HexCode</th>
+                <th class="table-data ps-5 d-flex justify-content-center">Actions</th>
             </tr>
         </thead>
         <tbody class="w-100">
@@ -20,6 +21,7 @@
                 <tr class="w-100 d-flex justify-content-between align-items-center">
                     <td class="table-data d-flex justify-content-start align-items-center">@color.Id</td>
                     <td class="table-data d-flex justify-content-start align-items-center">@color.Name</td>
+                    <td class="table-data d-flex justify-content-start align-items-center">@color.HexCode</td>
                     <td class="table-data d-flex justify-content-end align-items-start">
                         <a class="btn btn-warning" asp-controller="Color" asp-action="Edit" asp-route-id="@color.Id">Edit</a>
                         <a class="btn btn-danger ms-1" asp-controller="Color" asp-action="Delete" asp-route-id="@color.Id">Delete</a>

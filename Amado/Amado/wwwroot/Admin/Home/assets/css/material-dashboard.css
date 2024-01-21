@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 
 =========================================================
 * Material Dashboard 2 - v3.1.0
@@ -27955,3 +27955,16 @@ pre[class*="language-"] {
 .table-data:nth-child(3){
     width: 18%;
 }
+
+.product-index th {
+    width: 150px;
+    text-align: left; /* Th ve td içeriklerini sola hizala */
+    padding: 8px; /* Th ve td içeriklerine boşluk ekle */
+    font-size: 14px;
+}
+.product-index td {
+    padding-left: 22px;
+    font-size: 14px;
+}
+
+

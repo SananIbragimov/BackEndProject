@@ -117,8 +117,28 @@
       "PackagePath": "staticwebassets\\Admin\\Login\\js\\popper.js"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png",
-      "PackagePath": "staticwebassets\\img\\featured\\location.png916ec62b-66c5-4c8c-97b8-70f5beb78d83.png"
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 2.jpg3c83d998-cf45-4403-9e74-5cb8c4384d88.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 2.jpg3c83d998-cf45-4403-9e74-5cb8c4384d88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 23.jpgc50c9cb3-6877-4d06-b44d-fda3f05bfecf.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 23.jpgc50c9cb3-6877-4d06-b44d-fda3f05bfecf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 4.jpge82bf6f3-abbf-411d-a732-bfba9cca4b4e.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 4.jpge82bf6f3-abbf-411d-a732-bfba9cca4b4e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 7.jpg7c3a9344-221f-4450-b595-1c1e6e437819.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 7.jpg7c3a9344-221f-4450-b595-1c1e6e437819.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 8.jpgf79e3f1f-acb4-4f09-bd3c-52439a78987b.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 8.jpgf79e3f1f-acb4-4f09-bd3c-52439a78987b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 9.jpg1767c952-b610-4138-ac77-7f848f15b279.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 9.jpg1767c952-b610-4138-ac77-7f848f15b279.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -47,4 +47,8 @@
     <None Include="wwwroot\Admin\Login\js\popper.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\featured\" />
+  </ItemGroup>
+
 </Project>

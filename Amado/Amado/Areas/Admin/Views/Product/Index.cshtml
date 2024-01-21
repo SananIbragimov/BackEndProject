@@ -1,20 +1,21 @@
 ﻿@model ProductIndexVM
 
-<div class="w-100 ms-5 d-flex flex-column justify-content-start align-items-start">
+<div class="ms-5 d-flex flex-column justify-content-start align-items-start" style="width: 65%;">
 
-    <h2>Product List</h2>
-    <table class="table">
+    <h2 class="mx-3">Product List</h2>
+    <table class="table product-index">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Price</th>
                 <th>Quantity</th>
                 <th>In Stock</th>
                 <th>Category</th>
                 <th>Brand</th>
                 <th>Color</th>
-                <th>Images</th>
+                <th style="max-width: 250px;">Images</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -29,16 +30,17 @@
                             <td>@product.Id</td>
                             <td>@product.Name</td>
                             <td>@product.Desc</td>
+                            <td>@product.Price.ToString("N2")</td>
                             <td>@product.Quantity</td>
                             <td>@product.InStock</td>
                             <td>@product.Category?.Name</td>
                             <td>@product.Brand?.Name</td>
                             <td>@product.Color?.Name</td>
                             <td>
-                                <div>
+                                <div class="d-flex flex-wrap" style="width: 250px; gap:5px;">
                                     @foreach (var image in product.Images)
                                     {
-                                        <img src="/img/featured/@image.ImgUrl" alt="" style="max-width: 100px; max-height: 100px;" />
+                                        <img src="/img/featured/@image.ImgUrl" alt="" style="max-width: 50px; max-height: 50px;" /><br />
 
                                     }
                                 </div>
@@ -58,5 +60,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-info" asp-controller="Product" asp-action="Add">Add Product</a>
+    <a class="btn btn-info mx-3" asp-controller="Product" asp-action="Add">Add Product</a>
 </div>

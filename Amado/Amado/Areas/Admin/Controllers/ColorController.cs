@@ -42,7 +42,8 @@ namespace Amado.Areas.Admin.Controllers
 
             var newColor = new Color
             {
-                Name = model.Name.Trim().ToLower()
+                Name = model.Name.Trim().ToLower(),
+                HexCode = model.HexCode
             };
 
             _dbContext.Colors.Add(newColor);
@@ -58,7 +59,8 @@ namespace Amado.Areas.Admin.Controllers
 
             var model = new ColorEditVM
             {
-                Name = color.Name
+                Name = color.Name,
+                HexCode = color.HexCode
             };
 
             return View(model);
@@ -73,6 +75,7 @@ namespace Amado.Areas.Admin.Controllers
             if (color == null) return NotFound();
 
             color.Name = model.Name.Trim().ToLower();
+            color.HexCode = model.HexCode;
 
             _dbContext.Colors.Update(color);
             _dbContext.SaveChanges();

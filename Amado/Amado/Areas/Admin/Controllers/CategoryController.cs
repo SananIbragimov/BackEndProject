@@ -39,7 +39,7 @@ namespace Amado.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Add(CategoryAddVM model)
         {
-            if(!ModelState.IsValid) return View("Add", model);
+            if (!ModelState.IsValid) return View("Add", model);
 
             var newCategory = new Category
             {
@@ -84,7 +84,7 @@ namespace Amado.Areas.Admin.Controllers
         public IActionResult Delete(int? id)
         {
             var product = _dbContext.Categories.FirstOrDefault(x => x.Id == id);
-            if(product == null) return NotFound();
+            if (product == null) return NotFound();
 
             _dbContext.Categories.Remove(product);
             _dbContext.SaveChanges();

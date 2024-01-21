@@ -7,11 +7,16 @@
         <div class="form-group">
             <label for="name" class="control-label">Please enter color name:</label>
             <input asp-for="Name" class="form-control border mb-3 p-2 w-25" id="name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="color" class="control-label">Please choose the color:</label>
+            <input asp-for="HexCode" type="color" class="form-control border mb-3 p-2 w-25" id="color" />
+            <span asp-validation-for="HexCode" class="text-danger"></span>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-info">Update</button>
             <br />
-            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
     </form>
     <br /> <br />

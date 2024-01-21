@@ -30,9 +30,10 @@ namespace Amado
             }).AddEntityFrameworkStores<AppDbContext>();
 
             builder.Services.AddScoped<FileUploadService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             var app = builder.Build();
-            
+
 
             await DataSeed.InitializeAsync(app.Services);
 

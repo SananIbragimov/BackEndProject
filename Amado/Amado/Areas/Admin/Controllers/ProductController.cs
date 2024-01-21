@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace Amado.Areas.Admin.Controllers
 {
@@ -54,7 +55,7 @@ namespace Amado.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(ProductAddVM viewModel, FileUploadService fileUploadService)
+        public IActionResult Add(ProductAddVM viewModel, [FromServices] IEmailService emailService)
         {
             if (!ModelState.IsValid)
             {
@@ -83,6 +84,7 @@ namespace Amado.Areas.Admin.Controllers
             {
                 Name = viewModel.Name,
                 Desc = viewModel.Desc,
+                Price = viewModel.Price,
                 Quantity = viewModel.Quantity,
                 InStock = viewModel.InStock,
                 CategoryId = viewModel.CategoryId,
@@ -108,12 +110,20 @@ namespace Amado.Areas.Admin.Controllers
             _dbContext.Products.Add(newProduct);
             _dbContext.SaveChanges();
 
+            var subscribers = _dbContext.Subscriptions.Select(s => s.Email).ToList();
+            string subject = "New product";
+            string body = $"Added new product: {newProduct.Name}";
+
+            foreach (var subscriber in subscribers)
+            {
+                emailService.SendMail(subscriber, subject, body);
+            }
             return RedirectToAction("Index");
         }
 
         public IActionResult Edit(int id)
         {
-            var product = _dbContext.Products.Find(id);
+            var product = _dbContext.Products.Include(p => p.Images).FirstOrDefault(p => p.Id == id);
 
             if (product == null)
             {
@@ -122,8 +132,10 @@ namespace Amado.Areas.Admin.Controllers
 
             var productEditVM = new ProductEditVM
             {
+                Id = product.Id,
                 Name = product.Name,
                 Desc = product.Desc,
+                Price = Decimal.Parse(product.Price.ToString("N2")),
                 Quantity = product.Quantity,
                 InStock = product.InStock,
                 CategoryId = product.CategoryId,
@@ -134,6 +146,7 @@ namespace Amado.Areas.Admin.Controllers
                 Colors = GetColors(),
                 ExistingImages = product.Images.Select(i => i.ImgUrl).ToList()
             };
+            Console.WriteLine("Existing Images Count: " + productEditVM.ExistingImages.Count);
 
             return View(productEditVM);
         }
@@ -149,8 +162,10 @@ namespace Amado.Areas.Admin.Controllers
 
                 var updatedProduct = new Product
                 {
+                    Id = model.Id,
                     Name = model.Name,
                     Desc = model.Desc,
+                    Price = model.Price,
                     Quantity = model.Quantity,
                     InStock = model.InStock,
                     CategoryId = model.CategoryId,
@@ -230,16 +245,19 @@ namespace Amado.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var image = _dbContext.Images.Include(x => x.Product).FirstOrDefault(x => x.ProductId == id);
+            var product = _dbContext.Products.Include(x => x.Images).FirstOrDefault(x => x.Id == id);
 
-            if (image == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            _fileUploadService.DeleteFile(image.ImgUrl, Path.Combine("img", "featured"));
+            foreach (var image in product.Images)
+            {
+                _fileUploadService.DeleteFile(image.ImgUrl, Path.Combine("img", "featured"));
+            }
 
-            _dbContext.Products.Remove(image.Product);
+            _dbContext.Products.Remove(product);
             _dbContext.SaveChanges();
 
             return RedirectToAction(nameof(Index));
