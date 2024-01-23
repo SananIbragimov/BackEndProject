@@ -117,16 +117,208 @@
       "PackagePath": "staticwebassets\\Admin\\Login\\js\\popper.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\classy-nav.min.css",
+      "PackagePath": "staticwebassets\\css\\classy-nav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\core-style.css",
+      "PackagePath": "staticwebassets\\css\\core-style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\core-style.css.map",
+      "PackagePath": "staticwebassets\\css\\core-style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helvetica_neu_bold-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\helvetica_neu_bold-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helvetica_neu_bold-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\helvetica_neu_bold-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helvetica_neu_bold-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\helvetica_neu_bold-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helveticaneue_medium-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\helveticaneue_medium-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helveticaneue_medium-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\helveticaneue_medium-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\fonts\\helveticaneue_medium-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\helveticaneue_medium-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\cart1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\cart1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\cart2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\cart2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\bg-img\\cart3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\cart3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\cart.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\cart.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\core-img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\favorites.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\favorites.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\logo2.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\paypal.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\core-img\\search.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 10.jpgf870ad30-c1e6-4aae-b10d-62f29b668c4f.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 10.jpgf870ad30-c1e6-4aae-b10d-62f29b668c4f.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 2.jpg3c83d998-cf45-4403-9e74-5cb8c4384d88.jpg",
       "PackagePath": "staticwebassets\\img\\featured\\Image 2.jpg3c83d998-cf45-4403-9e74-5cb8c4384d88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 20.jpg31513a4a-8359-446d-9981-6e06ef8c4b81.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 20.jpg31513a4a-8359-446d-9981-6e06ef8c4b81.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 23.jpgc50c9cb3-6877-4d06-b44d-fda3f05bfecf.jpg",
       "PackagePath": "staticwebassets\\img\\featured\\Image 23.jpgc50c9cb3-6877-4d06-b44d-fda3f05bfecf.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 4.jpg2e84590a-884b-4d43-9263-47aea8ba5698.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 4.jpg2e84590a-884b-4d43-9263-47aea8ba5698.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 4.jpge82bf6f3-abbf-411d-a732-bfba9cca4b4e.jpg",
       "PackagePath": "staticwebassets\\img\\featured\\Image 4.jpge82bf6f3-abbf-411d-a732-bfba9cca4b4e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 5.jpg8b18cd8e-0130-4ecd-97a4-8f7094a718ad.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 5.jpg8b18cd8e-0130-4ecd-97a4-8f7094a718ad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 7.jpg5edefaf6-071e-46e3-aa1c-ae95a586d98c.jpg",
+      "PackagePath": "staticwebassets\\img\\featured\\Image 7.jpg5edefaf6-071e-46e3-aa1c-ae95a586d98c.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 7.jpg7c3a9344-221f-4450-b595-1c1e6e437819.jpg",
@@ -139,6 +331,74 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\featured\\Image 9.jpg1767c952-b610-4138-ac77-7f848f15b279.jpg",
       "PackagePath": "staticwebassets\\img\\featured\\Image 9.jpg1767c952-b610-4138-ac77-7f848f15b279.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\pro-big-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\pro-big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\pro-big-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\pro-big-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\pro-big-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\pro-big-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\pro-big-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\pro-big-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product1.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product2.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product3.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product4.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product5.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\img\\product-img\\product6.jpg",
+      "PackagePath": "staticwebassets\\img\\product-img\\product6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\active.js",
+      "PackagePath": "staticwebassets\\js\\active.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\classy-nav.min.js",
+      "PackagePath": "staticwebassets\\js\\classy-nav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\jquery\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\map-active.js",
+      "PackagePath": "staticwebassets\\js\\map-active.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEndProject\\Amado\\Amado\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props",

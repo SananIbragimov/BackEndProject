@@ -1,0 +1,27 @@
+﻿@model ProductIndexVM
+
+<!-- Product Catagories Area Start -->
+<div class="products-catagories-area clearfix">
+    <div class="amado-pro-catagory clearfix">
+
+        @foreach (var product in Model.Products)
+        {
+            <!-- Single Catagory -->
+            <div class="single-products-catagory clearfix">
+                <a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id">
+                    @if (product.Images.Any())
+                    {
+                        <img src="~/img/featured/@product.Images.First().ImgUrl" alt="@product.Name" style="object-fit:cover; min-height: 300px; max-height:500px">
+                    }
+                    <!-- Hover Content -->
+                    <div class="hover-content">
+                        <div class="line"></div>
+                        <p>From $@product.Price.ToString(".##")</p>
+                        <h4>@product.Name</h4>
+                    </div>
+                </a>
+            </div>
+        }
+
+    </div>
+</div>

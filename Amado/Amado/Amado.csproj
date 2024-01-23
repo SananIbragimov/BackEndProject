@@ -45,6 +45,19 @@
     <None Include="wwwroot\Admin\Login\js\jquery.min.js" />
     <None Include="wwwroot\Admin\Login\js\main.js" />
     <None Include="wwwroot\Admin\Login\js\popper.js" />
+    <None Include="wwwroot\css\core-style.css.map" />
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\helveticaneue_medium-webfont.woff2" />
+    <None Include="wwwroot\fonts\helvetica_neu_bold-webfont.woff2" />
+    <None Include="wwwroot\js\active.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\classy-nav.min.js" />
+    <None Include="wwwroot\js\jquery\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\js\map-active.js" />
+    <None Include="wwwroot\js\plugins.js" />
+    <None Include="wwwroot\js\popper.min.js" />
   </ItemGroup>
 
   <ItemGroup>
