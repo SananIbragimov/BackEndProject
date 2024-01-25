@@ -1,0 +1,19 @@
+﻿@model SubscribesComponentVM
+
+<form asp-controller="Subscribe" asp-action="Post" method="post">
+    <input type="email" asp-for="Email" class="nl-email" placeholder="Your E-mail">
+    <input type="submit" value="Subscribe"> <br />
+    <span asp-validation-for="Email" style="color: red;"></span>
+    @if ((string)TempData["SubscribeMessage"] != "Email added successfully.")
+    {
+        <div style="color: red;">
+            @TempData["SubscribeMessage"]
+        </div>
+    }
+    else
+    {
+        <div style="color: green;">
+            @TempData["SubscribeMessage"]
+        </div>
+    }
+</form>

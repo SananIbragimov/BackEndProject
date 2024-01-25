@@ -1,4 +1,5 @@
-﻿@functions {
+﻿
+@functions {
     private string IsPageActive(string controller, string action)
     {
         var currentController = ViewContext.RouteData.Values["Controller"] as string ?? "";
@@ -82,7 +83,7 @@
                     <li class="@(IsPageActive("", ""))"><a href="shop.html">Shop</a></li>
                     <li class="@(IsPageActive("Product", "Index"))"><a asp-controller="Product" asp-action="Index">Product</a></li>
                     <li class="@(IsPageActive("", ""))"><a href="cart.html">Cart</a></li>
-                    <li class="@(IsPageActive("", ""))"><a href="checkout.html">Checkout</a></li>
+                    <li class="@(IsPageActive("Checkout", "Index"))"><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -123,10 +124,7 @@
                 <!-- Newsletter Form -->
                 <div class="col-12 col-lg-6 col-xl-5">
                     <div class="newsletter-form mb-100">
-                        <form action="#" method="post">
-                            <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
-                            <input type="submit" value="Subscribe">
-                        </form>
+                        @await Component.InvokeAsync("Subscribes");
                     </div>
                 </div>
             </div>
@@ -173,8 +171,8 @@
                                         <li class="nav-item @(IsPageActive("", ""))">
                                             <a class="nav-link" href="cart.html">Cart</a>
                                         </li>
-                                        <li class="nav-item@(IsPageActive("", ""))">
-                                            <a class="nav-link" href="checkout.html">Checkout</a>
+                                        <li class="nav-item @(IsPageActive("Checkout", "Index"))">
+                                            <a class="nav-link" asp-controller="Checkout" asp-action="Index">Checkout</a>
                                         </li>
                                     </ul>
                                 </div>
