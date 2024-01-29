@@ -27943,6 +27943,8 @@ pre[class*="language-"] {
     right: 105px; 
     top: 0;
 }
+
+
 .image-container{
     position: relative;
     margin-top: 5px;
@@ -27966,5 +27968,4 @@ pre[class*="language-"] {
     padding-left: 22px;
     font-size: 14px;
 }
-
 

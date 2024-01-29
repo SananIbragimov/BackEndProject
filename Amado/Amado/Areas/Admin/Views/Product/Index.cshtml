@@ -1,4 +1,6 @@
-﻿@model ProductIndexVM
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model ProductIndexVM
 
 <div class="ms-5 d-flex flex-column justify-content-start align-items-start" style="width: 65%;">
 
@@ -60,5 +62,8 @@
         </tbody>
     </table>
 
+    <div class="pagination-container d-flex justify-content-center w-100">
+        @Html.PagedListPager(Model.Products, page => Url.Action("Index", new { page }))
+    </div>
     <a class="btn btn-info mx-3" asp-controller="Product" asp-action="Add">Add Product</a>
 </div>

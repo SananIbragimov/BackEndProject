@@ -1,4 +1,6 @@
-﻿@model ProductIndexVM
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model ProductIndexVM
 
 <!-- Product Catagories Area Start -->
 <div class="products-catagories-area clearfix">
@@ -24,4 +26,12 @@
         }
 
     </div>
+    <!-- Pagination -->
+    <nav aria-label="navigation">
+        <div class="pagination pagination-container justify-content-center mt-50">
+            @Html.PagedListPager(Model.Products, page => Url.Action("Index", new { page }))
+        </div>
+    </nav>
 </div>
+        
+    

@@ -1,0 +1,10 @@
+﻿﻿
+@using Amado.Entities
+@model List<Product>
+
+<ul class="list-group">
+    @foreach (var product in Model)
+    {
+        <li class="list-group-item"><a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id">@product.Name</a></li>
+    }
+</ul>

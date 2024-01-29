@@ -2,12 +2,13 @@
 
 using Amado.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using X.PagedList;
 
 namespace Amado.Areas.Admin.Models
 {
     public class ProductIndexVM
     {
-        public List<Product> Products { get; set; }
+        public IPagedList<Product> Products { get; set; }
         
     }
 }

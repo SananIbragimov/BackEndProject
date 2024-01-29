@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Globalization;
+using X.PagedList;
 
 namespace Amado.Areas.Admin.Controllers
 {
@@ -24,15 +25,17 @@ namespace Amado.Areas.Admin.Controllers
             _fileUploadService = fileUploadService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1, int pageSize = 5)
         {
             var products = _dbContext.Products
                 .Include(x => x.Category)
                 .Include(x => x.Brand)
                 .Include(x => x.Color)
-                .Include(x => x.Images).ToList();
+                .Include(x => x.Images).OrderBy(x => x.Id);
 
-            var model = new ProductIndexVM { Products = products };
+            var pagedList = products.ToPagedList(page, pageSize);
+
+            var model = new ProductIndexVM { Products = pagedList };
 
             return View(model);
         }
@@ -173,6 +176,32 @@ namespace Amado.Areas.Admin.Controllers
                     ColorId = model.ColorId
 
                 };
+
+                var removedImages = model.RemovedImages?.Split(',');
+
+                if (model.RemovedImages != null && model.RemovedImages.Any())
+                {
+                    var cleanedRemovedImages = model.RemovedImages.Select(url => url.Trim()).ToList();
+
+                    foreach (var imageUrl in cleanedRemovedImages)
+                    {
+                        var fileName = GetFileNameFromUrl(imageUrl);
+                        var imageToRemove = _dbContext.Images.FirstOrDefault(i => i.ImgUrl.Trim() == fileName);
+
+                        if (imageToRemove != null)
+                        {
+                            _fileUploadService.DeleteFile(imageToRemove.ImgUrl, Path.Combine("img", "featured"));
+
+                            _dbContext.Images.Remove(imageToRemove);
+                        }
+                    }
+
+                    _dbContext.SaveChanges();
+                }
+
+
+
+
                 if (model.Images != null && model.Images.Count > 0)
                 {
                     updatedProduct.Images = new List<Image>();
@@ -236,6 +265,12 @@ namespace Amado.Areas.Admin.Controllers
 
             return colors;
         }
+        public static string GetFileNameFromUrl(string url)
+        {
+            var uri = new Uri(url);
+            return Path.GetFileName(uri.LocalPath);
+        }
+
 
 
         public IActionResult Delete(int? id)

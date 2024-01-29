@@ -3,7 +3,7 @@ let filesInput = document.getElementById('imageInput');
 let priceInput = document.getElementById('price');
 
 filesInput.addEventListener('change', () => {
-    
+
     for (var i = 0; i < filesInput.files.length; i++) {
         var file = filesInput.files[i];
         var reader = new FileReader();
@@ -44,8 +44,35 @@ previewContainer.addEventListener('click', function (e) {
 
 priceInput.addEventListener('keyup', (e) => {
     let inputValue = e.target.value;
-    
+
     let formattedValue = inputValue.replace('.', ',');
 
     e.target.value = formattedValue;
 });
+
+
+{
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.remove-icon').forEach((removeIcon) => {
+            removeIcon.addEventListener('click', (e) => {
+                const parentElement = e.currentTarget.parentNode;
+                const imageUrl = parentElement.querySelector('img').src;
+
+                updateRemovedImages(imageUrl);
+
+                parentElement.remove();
+            });
+        });
+
+        function updateRemovedImages(imageUrl) {
+            const removedImagesInput = document.getElementById('removedImages');
+
+            const existingValues = removedImagesInput.value ? removedImagesInput.value.split(',') : [];
+
+            if (!existingValues.includes(imageUrl)) {
+                existingValues.push(imageUrl);
+                removedImagesInput.value = existingValues.join(',');
+            }
+        }
+    });
+}

@@ -1,9 +1,10 @@
 ﻿using Amado.Entities;
+using X.PagedList;
 
 namespace Amado.Models
 {
     public class ProductIndexVM
     {
-        public List<Product> Products { get; set; }
+        public IPagedList<Product> Products { get; set; }
     }
 }

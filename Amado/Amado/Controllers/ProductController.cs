@@ -2,6 +2,7 @@
 using Amado.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using X.PagedList;
 
 namespace Amado.Controllers
 {
@@ -14,14 +15,16 @@ namespace Amado.Controllers
             _dbContext = dbContext;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1, int pageSize = 12)
         {
-            var products = _dbContext.Products.Include(x => x.Images).ToList();
+            var products = _dbContext.Products.Include(x => x.Images).OrderBy(x=>x.Id);
+            var pagedList = products.ToPagedList(page, pageSize);
+
             if (products is null) return NotFound();
 
             var model = new ProductIndexVM
             {
-                Products = products
+                Products = pagedList
             };
 
             return View(model);

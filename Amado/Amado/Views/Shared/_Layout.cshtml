@@ -1,9 +1,13 @@
-﻿
-@functions {
+﻿@functions {
     private string IsPageActive(string controller, string action)
     {
         var currentController = ViewContext.RouteData.Values["Controller"] as string ?? "";
         var currentAction = ViewContext.RouteData.Values["Action"] as string ?? "";
+
+        if (string.IsNullOrEmpty(action))
+        {
+            return currentController.Equals(controller, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+        }
 
         return (currentController.Equals(controller, StringComparison.OrdinalIgnoreCase) &&
                 currentAction.Equals(action, StringComparison.OrdinalIgnoreCase)) ? "active" : "";
@@ -41,10 +45,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="search-content">
-                        <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
-                        </form>
+                        @await Component.InvokeAsync("Search")
                     </div>
                 </div>
             </div>
@@ -80,8 +81,8 @@
             <nav class="amado-nav">
                 <ul>
                     <li class="@(IsPageActive("Home", "Index"))"><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="@(IsPageActive("", ""))"><a href="shop.html">Shop</a></li>
-                    <li class="@(IsPageActive("Product", "Index"))"><a asp-controller="Product" asp-action="Index">Product</a></li>
+                    <li class="@(IsPageActive("Shop", "Index"))"><a asp-controller="Shop" asp-action="Index">Shop</a></li>
+                    <li class="@(IsPageActive("Product", "Index")) || @(IsPageActive("Product", "Detail"))"><a asp-controller="Product" asp-action="Index">Product</a></li>
                     <li class="@(IsPageActive("", ""))"><a href="cart.html">Cart</a></li>
                     <li class="@(IsPageActive("Checkout", "Index"))"><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
                 </ul>
@@ -162,10 +163,10 @@
                                         <li class="nav-item @(IsPageActive("Home", "Index"))">
                                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                                         </li>
-                                        <li class="nav-item @(IsPageActive("", ""))">
-                                            <a class="nav-link" href="shop.html">Shop</a>
+                                        <li class="nav-item @(IsPageActive("Shop", "Index"))">
+                                            <a class="nav-link" asp-controller="Shop" asp-action="Index">Shop</a>
                                         </li>
-                                        <li class="nav-item @(IsPageActive("Product", "Index"))">
+                                        <li class="nav-item @(IsPageActive("Product", "Index")) || @(IsPageActive("Product", "Detail"))">
                                             <a class="nav-link" asp-controller="Product" asp-action="Index">Product</a>
                                         </li>
                                         <li class="nav-item @(IsPageActive("", ""))">
@@ -195,6 +196,7 @@
     <!-- Active js -->
     <script src="~/js/active.js"></script>
 
+    <script src="~/js/main.js"></script>
     @RenderSection("Scripts", false)
 </body>
 

@@ -25,5 +25,7 @@ namespace Amado.Areas.Admin.Models
         public List<SelectListItem>? Brands { get; set; }
         public List<SelectListItem>? Colors { get; set; }
         public List<string> ExistingImages { get; set; } = new List<string>();
+        public List<string> RemovedImages { get; set; } = new List<string>();
+
     }
 }
