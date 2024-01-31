@@ -1,0 +1,118 @@
+﻿@using Amado.Entities
+@model Basket
+
+<div class="cart-table-area section-padding-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="cart-title mt-50">
+                    <h2>Shopping Cart</h2>
+                </div>
+
+                <div class="cart-table clearfix">
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.BasketItems)
+                            {
+                                <tr>
+                                    <td class="cart_product_img">
+                                        <a href="#"><img src="~/img/featured/@item.ImageUrl" alt="Product"></a>
+                                    </td>
+                                    <td class="cart_product_desc">
+                                        <h5>@item.Name</h5>
+                                    </td>
+                                    <td class="price">
+                                        <span>$@($"{item.Price * item.Quantity:0.##}")</span>
+                                    </td>
+                                    <td class="qty d-flex">
+                                        <div class="qty-btn">
+                                            <div class="quantity">
+                                                <span class="qty-minus" onclick="updateQuantity(this, -1)"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="number" class="qty-text" step="1" min="1" max="300" name="quantity" value="@item.Quantity" data-price="@item.Price">
+                                                <span class="qty-plus" onclick="updateQuantity(this, 1)"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <p style="margin: 0 50px; color:red; font-size: 20px; cursor: pointer;" class="delete-child"><i class="fa fa-close"></i></p>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="cart-summary">
+                    <h5>Cart Total</h5>
+                    <ul class="summary-table">
+                        <li><span>subtotal:</span> <span>$@Model.BasketItems.Sum(item => item.Price * item.Quantity).ToString(".##")</span></li>
+                        <li><span>delivery:</span> <span>Free</span></li>
+                        <li><span>total:</span> <span>$@Model.BasketItems.Sum(item => item.Price * item.Quantity).ToString(".##")</span></li>
+                    </ul>
+                    <div class="cart-btn mt-100">
+                        <a href="cart.html" class="btn amado-btn w-100">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.qty-minus, .qty-plus').click(function () {
+                var input = $(this).siblings('.qty-text');
+                var newValue = parseInt(input.val()) + ($(this).hasClass('qty-plus') ? 1 : -1);
+
+                if (newValue < 1 || isNaN(newValue)) {
+                    newValue = 1;
+                }
+
+                input.val(newValue);
+                updatePriceAndTotal();
+            });
+
+            $('.qty-text').change(function () {
+                updatePriceAndTotal();
+            });
+
+            function updatePriceAndTotal() {
+                var subtotalElement = $('.summary-table li:nth-child(1) span:last-child');
+                var totalElement = $('.summary-table li:nth-child(3) span:last-child');
+
+                var subtotal = 0;
+                $('.qty-text').each(function () {
+                    var unitPrice = parseFloat($(this).data('price'));
+                    var quantity = parseInt($(this).val());
+                    subtotal += unitPrice * quantity;
+
+                    var priceElement = $(this).closest('tr').find('.price span');
+                    priceElement.text('$' + (unitPrice * quantity).toFixed(2));
+                });
+
+                subtotalElement.text('$' + subtotal.toFixed(2));
+                totalElement.text('$' + subtotal.toFixed(2));
+            }
+
+            $(".delete-child").on("click", function () {
+
+                var childElement = $(this);
+                childElement.closest("tr").remove();
+
+                updatePriceAndTotal();
+            });
+
+        });
+    </script>
+}

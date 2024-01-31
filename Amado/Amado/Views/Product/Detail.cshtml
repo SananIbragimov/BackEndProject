@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- Add to Cart Form -->
-                    <form class="cart clearfix" method="post">
+                    <form class="cart clearfix" method="post" asp-controller="Basket" asp-action="AddToBasket" asp-route-id="@Model.Product.Id">
                         <div class="cart-btn d-flex mb-50">
                             <p>Qty</p>
                             <div class="quantity">

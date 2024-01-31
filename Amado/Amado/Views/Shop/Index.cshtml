@@ -148,9 +148,9 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                 </div>
-                                <div class="cart">
-                                    <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="img/core-img/cart.png" alt=""></a>
-                                </div>
+                                <form class="cart" asp-controller="Basket" asp-action="AddToBasket" asp-route-id="@product.Id" method="post">
+                                    <button type="submit" style="border: none; cursor: pointer;"><img src="img/core-img/cart.png" alt=""></button>
+                                </form>
                             </div>
                         </div>
                     </div>
